@@ -175,9 +175,10 @@
 .form-container {
     background-color: #aaaaaad1;
     box-sizing: border-box;
-    padding: 7rem 5rem 0 7rem;
+    padding: 6rem 5rem 0rem 7rem;
     width: 100%;
-    height: 100vh;
+    position: relative;
+    height: 102vh;
 }
 
 .contact-image {
@@ -190,17 +191,38 @@
     height: 92vh;
     z-index: 99;
     position: relative;
-    left: -15rem;
+    left: -10rem;
 }
 
 .form-container-inner {
     width: 70%;
     padding: 0;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #142251;
 }
 
 .form-container h2 {
     color: #142251;
     margin-left: 5px;
+}
+
+.address-container {
+    box-sizing: border-box;
+    width: calc(100% - 45%);
+    margin-top: 3rem;
+    position: absolute;
+}
+
+.address-box {
+    text-align: center;
+    position: relative;
+    padding: 15.0307px 10.7362px;
+    gap: 5.37px;
+    width: 90%;
+    margin: auto;
+    background: #D9D9D9;
+    box-shadow: 0px 2.14725px 2.14725px rgba(0, 0, 0, 0.25);
+    z-index: 100;
 }
 
 /* Smaller Screens */
@@ -253,5 +275,33 @@
     
     .mission {
         bottom: -3rem;
+    }
+
+    .contact-image {
+        padding-top: 4rem;
+    }
+
+    .contact-image img {
+        width: 100%;
+        height: 15rem;
+        left: 0;
+    }
+
+    .form-container {
+        text-align: center;
+        padding: 4rem 2rem 7rem;
+    }
+
+    .form-container-inner {
+        margin: auto;
+        width: 100%;
+    }
+
+    .form-container h2 {
+        margin-left: 0;
+    }
+
+    .address-container {
+        width: 87%;
     }
 }

@@ -83,8 +83,7 @@
 }
 
 .ListItem:hover, .active {
-    background-color: #B76046;
-    color: white;
+    border-bottom: 5px solid #B76046;
 }
 
 

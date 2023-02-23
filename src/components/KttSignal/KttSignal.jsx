@@ -15,7 +15,7 @@ import smilingManImg from "../../images/Rectangle 45kttsignal.png"
 import careerImg from "../../images/Rectangle 49kttsignal.png"
 import contactImg from "../../images/Rectangle 61kttsignal-1.png"
 import Input from "../UI/Input/Input";
-
+import { BlueGradientBtn } from "../UI/Buttons/Buttons"
 
 const KttSignal = () => {
 
@@ -203,7 +203,33 @@ const KttSignal = () => {
                                 <Input inputType="text" inputGrid={12} label="Address" />
                                 <Input inputType="text" inputGrid={12} label="Write us..." multiline />
                             </Grid>
+                            <div style={{textAlign: "right", paddingRight: "6px"}}>
+                                <BlueGradientBtn title="Send" />
+                            </div>
                         </form>
+                        <div className="address-container">
+                            <Grid container>
+                                <Grid item xs={6}>
+                                    <div className="address-box">
+                                        <h4>HEADQUARTERS</h4>
+                                        <p>KTTSIGNAL LTD. a: House 40, C Close O.A.U Quarters Maitama, 
+                                        F.C.T - Abuja, Nigeria.</p>
+                                        <p>Call: (234) 704-1670-000 </p>
+                                        <p>Email: info@kttsignal.net</p>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="address-box">
+                                        <h4>INTERNATIONAL OFFICES</h4>
+                                        <p>KTTSIGNAL S.A. 6131, Mount Kulal Str Ext 4. Lenasia south. 
+                                            Johannesburg R.S.A.</p>
+                                        <p>Call: (27) 732-747-162</p>
+                                        <p>Email: rsa@kttsignal.ne</p>
+                                    </div>
+                                </Grid>
+                            </Grid>
+                        </div>
+
                     </Grid>
                     <Grid item xs={12} md={4} className="contact-image">
                         <img src={contactImg} alt={contactImg} />

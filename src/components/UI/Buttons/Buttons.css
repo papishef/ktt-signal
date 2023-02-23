@@ -1,0 +1,17 @@
+.BlueGradientBtn {
+    background: linear-gradient(90deg, #F24E1E, #074DFF);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: .9rem;
+    padding: .9rem 3.3rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.BlueGradientBtn:hover {
+    background: linear-gradient(45deg, #074DFF, #F24E1E);
+}
