@@ -1,0 +1,111 @@
+.ParentMenu,
+.BigMenu {
+    width: 100vw;
+    color: #5658B7;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: .8rem 6rem;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    -webkit-box-shadow: outset 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+.meet-us {
+    text-decoration: none;
+    color: #142251;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+.meet-us:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.ParentLogo {
+    width: 15rem;
+    height: 4rem;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+} 
+
+.ParentLogo:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.BigMenu {
+    font-size: 1.2rem;
+    padding: .5rem 2.5rem 0;
+}
+
+.Logo {
+    width: 10rem;
+}
+
+.MenuItems {
+    display: flex;
+}
+
+.ListItem {
+    color: #42449a;
+    text-decoration: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 1.5rem 2.5rem;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.ListItem:hover, .active {
+    background-color: #B76046;
+    color: white;
+}
+
+
+
+/* Smaller Screens */
+@media (max-width: 900px)  {
+
+    .meet-us {
+        font-size: 1rem;
+        border: 2px solid #142251;
+        padding: 2px 8px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .ParentMenu {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}

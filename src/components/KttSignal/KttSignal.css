@@ -1,0 +1,257 @@
+.top-container {
+    box-sizing: border-box;
+    background-image: url("../../images/ktt-top.PNG");
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    top: 5rem;
+}
+
+.what-we-do {
+    box-sizing: border-box;
+    padding: 12rem 5rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.what-we-do h2 {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.what-we-do p {
+    color: #333333e5;
+    font-weight: 600;
+    padding: 0 6rem;
+}
+
+.services {
+    height: 20rem;
+    margin-top: 1rem;
+}
+
+.services .circle {
+    width: 20rem;
+    margin: 2rem auto;
+}
+
+.services h3 {
+    background-color: rgba(0, 0, 0, 0.584);
+    color: #F24E1E;
+    font-size: 1.7rem;
+    font-weight: 400;
+    position: relative;
+    top: -12rem;
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.welcome-links {
+    text-decoration: none;
+}
+
+.about {
+    background-color: #F5F5F5;
+    padding: 0 0 9rem;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.about-orange {
+    background-color: #B76046;
+    padding: 5rem 10rem 7rem 7rem;
+    box-sizing: border-box;
+}
+
+.career-orange {
+    background-color: #B76046;
+    padding: 3rem 5rem 0rem 10rem;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.about-orange p,
+.career-orange p,
+.mission-vision {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-orange h2,
+.career-orange h2,
+.vision h2,
+.mission h2,
+.form-container h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.about-orange h4 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3rem;
+    margin: 3rem 0 0;
+}
+
+.about-images,
+.career-images {
+    padding: 4rem 0 0 0;
+    box-sizing: border-box;
+}
+
+.about-images img {
+    width: 120%;
+    height: 23rem;
+    margin-bottom: 4rem;
+    z-index: 99;
+    position: relative;
+    left: -7rem;
+}
+
+.career-images img {
+    width: 150%;
+    height: 23rem;
+    z-index: 99;
+    position: relative;
+    right: 7rem;
+}
+
+.about-images img:last-child {
+    margin-bottom: 0;
+}
+
+.mission-vision {
+    background-color: #B4B4B4;
+    padding: 1rem 8rem;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+}
+
+.vision {
+    background-image: url("../../images/Rectangle 59kttsignal-1.png");
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    top: -6rem;
+    left: -1rem;
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mission {
+    background-image: url("../../images/Rectangle 60kttsignal-1.png");
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    bottom: -6rem;
+    right: -1rem;
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.mission-inner,
+.vision-inner {
+    padding: 5rem 3rem;
+    background-color: #0000008a;
+}
+
+
+#career {
+    margin-bottom: 7rem;
+}
+
+.form-container {
+    background-color: #aaaaaad1;
+    box-sizing: border-box;
+    padding: 7rem 5rem 0 7rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-image {
+    padding: 10rem 0 0 0;
+    box-sizing: border-box;
+}
+
+.contact-image img {
+    width: 144%;
+    height: 92vh;
+    z-index: 99;
+    position: relative;
+    left: -15rem;
+}
+
+.form-container-inner {
+    width: 70%;
+    padding: 0;
+}
+
+.form-container h2 {
+    color: #142251;
+    margin-left: 5px;
+}
+
+/* Smaller Screens */
+@media (max-width: 900px)  {
+
+    .what-we-do {
+        padding: 6rem 3rem;
+    }
+
+    .what-we-do p {
+        padding: 0;
+    }
+
+    .services {
+        width: 350px;
+        height: 350px;
+    }
+
+    .services .circle {
+        width: 90%;
+        height: 90%;
+    }
+
+    .about-orange {
+        padding: 3rem 4rem 3rem 2rem;
+    }
+
+    .career-orange {
+        padding: 3rem 3rem 3rem 4rem;
+    }
+
+    .about-images img {
+        left: -4rem;
+        width: 160%;
+    }
+
+    .career-images img {
+        right: 4rem;
+        width: 160%;
+    }
+
+    .mission-vision {
+        padding: 0 2rem;
+    }
+
+    .vision {
+        top: -3rem;
+        left: -2rem;
+    }
+    
+    .mission {
+        bottom: -3rem;
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html,
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  color: #142251;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
