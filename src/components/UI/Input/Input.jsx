@@ -43,11 +43,62 @@ const useStyles = makeStyles({
             border: "none",
             color: "white"
         }
+    },
+
+    stem: {
+        width: '100%',
+        margin: '0 auto',
+        border: 'none',
+        "& .MuiOutlinedInput-input": {
+            borderRadius: "50px",
+            boxSizing: 'border-box',
+            height: '24px',
+            backgroundColor: "#F5F5F5"
+
+        },
+        "& .MuiInputLabel-root": {
+            color: "#14225188",
+            fontSize: '.6rem',
+            position: 'absolute',
+            top: '-5px'
+        },
+        "& .MuiOutlinedInput-notchedOutline": {
+            border: '2px solid #F24E1E'
+        },
+        "& .MuiOutlinedInput-root": {
+            margin: '0',
+            borderRadius: "50px",
+            height: '35px',
+            border: '0px solid white'
+            
+        },
+        "&:hover .MuiOutlinedInput-input": {
+            // color: "rgb(240, 240, 240)"
+        },
+        "&:hover .MuiInputLabel-root": {
+            color: "#142251"
+        },
+        "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+            border: '2px solid #f97851'
+        },
+        "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input": {
+            color: "#142251",
+            fontSize: '.9rem',
+        },
+        "& .MuiInputLabel-root.Mui-focused": {
+            //Edits the Form Label when cusor is focused
+            color: "#000000",
+            fontSize: '.8rem',
+        },
+        "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            color: "white",
+            border: '2px solid #F24E1E'
+        }
     }
 });
 
 
-const Input = props => {
+export const Input = props => {
     const classes = useStyles();
     return (
         <Grid item xs={props.inputGrid} px={1} mb={3} sx={{boxSizing: "border-box"}}>
@@ -75,4 +126,14 @@ const Input = props => {
     )
 }
 
-export default Input;
+export const InputNewsLetter = props => {
+    const classes = useStyles();
+    return     <TextField
+                    variant="outlined"
+                    id=""
+                    className={classes.stem}
+                    label="Input your Email"
+                    type="email"
+                />
+}
+

@@ -14,8 +14,9 @@ import passionImg from "../../images/Rectangle 61kttsignal.png"
 import smilingManImg from "../../images/Rectangle 45kttsignal.png"
 import careerImg from "../../images/Rectangle 49kttsignal.png"
 import contactImg from "../../images/Rectangle 61kttsignal-1.png"
-import Input from "../UI/Input/Input";
+import { Input } from "../UI/Input/Input";
 import { BlueGradientBtn } from "../UI/Buttons/Buttons"
+import { KttFooter } from "../UI/Footer/Footer";
 
 const KttSignal = () => {
 
@@ -237,6 +238,8 @@ const KttSignal = () => {
                 </Grid>
 
             </div>
+
+            <KttFooter />
         </div>        
     )
 }
