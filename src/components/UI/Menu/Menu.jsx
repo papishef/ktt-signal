@@ -86,7 +86,7 @@ const MenuBarSmall = () => {
             </Box>
 
             {/* MENU BLOCK */}
-            <Box className={menuOpen ? "SmallMenuBlock" : "SmallMenuNoDisplay"}>
+            {/* <Box className={menuOpen ? "SmallMenuBlock" : "SmallMenuNoDisplay"}>
                 <Link to={'/about'} className="ListItemSmall">
                     <Box>About MP Capital</Box>
                 </Link>
@@ -106,7 +106,7 @@ const MenuBarSmall = () => {
                     <Box>User Login</Box>
                 </Link>
                 
-            </Box>
+            </Box> */}
 
         </Box>
 
