@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 // import { Divide as Hamburger } from 'hamburger-react'
@@ -55,7 +55,6 @@ const MenuBarLarge = () => {
 /* FOR SMALLER SCREENS */
 const MenuBarSmall = () => {
 
-    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
 
