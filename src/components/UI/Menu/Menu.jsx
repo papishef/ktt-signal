@@ -7,7 +7,6 @@ import logoImg from "../../../images/Logo.png"
 
 const screenWidth = window.innerWidth
 const pathname = window.location.pathname
-console.log(pathname);
 
 export const ParentMenu = () => {
     return (

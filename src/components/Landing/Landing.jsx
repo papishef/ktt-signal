@@ -19,14 +19,14 @@ const Landing = () => {
 
                 <Grid container mt={2}>
                     <Grid item xs={12} md={6} p={5}>
-                        <div class="circle">
+                        <div className="circle">
                             <Link className="welcome-links" to="/ktt-signal">
                                 <img src={kttImage} alt='KTT Welcome' />
                             </Link>
                         </div>
                     </Grid>
                     <Grid item xs={12} md={6} p={5}>   
-                        <div class="circle">
+                        <div className="circle">
                             <Link className="welcome-links" to="/tirobs">
                                 <img src={tirobsImage} alt='Tirobs Welcome' />
                             </Link>
