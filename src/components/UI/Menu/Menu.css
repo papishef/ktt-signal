@@ -20,8 +20,8 @@
 }
 
 .meet-us {
-    text-decoration: none;
-    color: #142251;
+    text-decoration: none !important;
+    color: #142251 !important;
     transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -70,8 +70,8 @@
 }
 
 .ListItem {
-    color: #42449a;
-    text-decoration: none;
+    color: #42449a !important;
+    text-decoration: none !important;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     padding: 1.5rem 2.5rem;
@@ -144,9 +144,9 @@
     }
 
     .ListItemSmall {
-        color: #fff;
+        color: #fff !important;
         text-align: center;
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 0;
         width: 100%;
     }
@@ -154,6 +154,7 @@
     .ListItemSmallInner {
         border-top: 1px solid #fff;
         padding: 40px 0;
+        text-decoration: none;
     }
 
     .ListItemSmallInner:hover {

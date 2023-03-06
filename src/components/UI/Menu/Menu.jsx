@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "@mui/material";
 import { Sling as Hamburger } from 'hamburger-react'
 import "./Menu.css"
 import logoImg from "../../../images/Logo.png"
@@ -11,8 +11,8 @@ const pathname = window.location.pathname
 export const ParentMenu = () => {
     return (
         <div className='ParentMenu'>        
-            <Link to='/'><img className='ParentLogo' src={logoImg} alt={logoImg} /></Link>
-            <Link className='meet-us' to="/team">Meet us</Link>
+            <Link href='/'><img className='ParentLogo' src={logoImg} alt={logoImg} /></Link>
+            <Link className='meet-us' href="/team">Meet us</Link>
         </div>
     )
 }
@@ -24,23 +24,23 @@ const MenuBarLarge = () => {
 
         <nav className="BigMenu">
             <div>
-                <Link to={'/'}>
+                <Link href='/'>
                     <img src={logoImg} alt='KTT SIGNAL' className="Logo" />
                 </Link>
             </div>
 
             <div>
                 <div className='MenuItems'>
-                    <Link to={'/ktt-signal'} className={pathname === "/ktt-signal" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='/ktt-signal' className={pathname === "/ktt-signal" ? "ListItem +  active" : "ListItem"}>
                         <div>Home</div>
                     </Link>
-                    <Link to={'/ktt-signal/what-we-do'} className={pathname === "/ktt-signal/what-we-do" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='/ktt-signal/what-we-do' className={pathname === "/ktt-signal/what-we-do" ? "ListItem +  active" : "ListItem"}>
                         <div>What we do</div>
                     </Link>
-                    <Link to={'/ktt-signal/about'} className={pathname === "/ktt-signal/about" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='/ktt-signal/about' className={pathname === "/ktt-signal/about" ? "ListItem +  active" : "ListItem"}>
                         <div>Who we are</div>
                     </Link>
-                    <Link to={'/ktt-signal/contact'} className={pathname === "/ktt-signal/contact" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='/ktt-signal/contact' className={pathname === "/ktt-signal/contact" ? "ListItem +  active" : "ListItem"}>
                         <div>Contact us</div>
                     </Link>
                 </div>
@@ -62,7 +62,7 @@ const MenuBarSmall = () => {
             <div className='SmallMenuContainer'>
                 <Box className="SmallMenu">
                     <div>
-                        <Link to={'/'}>
+                        <Link href='/'>
                             <img src={logoImg} alt='LOGO' className="Logo" />
                         </Link>
                     </div>
@@ -87,16 +87,16 @@ const MenuBarSmall = () => {
 
             {/* MENU BLOCK */}
             <Box className={menuOpen ? "SmallMenuBlock" : "SmallMenuNoDisplay"}>
-                <Link to={'/'} className="ListItemSmall">
+                <Link href='/' className="ListItemSmall">
                     <div className='ListItemSmallInner'>Parent Page</div>
                 </Link>
-                <Link to={'#what-we-do'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                <Link href='#what-we-do' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
                     <div className='ListItemSmallInner'>What we do</div>
                 </Link>
-                <Link to={'#who-we-are'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                <Link href='#who-we-are' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
                     <div className='ListItemSmallInner'>Who we are</div>
                 </Link>
-                <Link to={'#contact'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                <Link href='#contact' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
                     <div className='ListItemSmallInner'>Contact Us</div>
                 </Link>
                 
