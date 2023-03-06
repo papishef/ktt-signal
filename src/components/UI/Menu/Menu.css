@@ -88,6 +88,12 @@
 
 
 
+.SmallMenuBlock,
+.SmallMenu  {
+    display: none;
+}
+
+
 /* Smaller Screens */
 @media (max-width: 900px)  {
 
@@ -100,11 +106,58 @@
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-}
+    }
 
     .ParentMenu {
         justify-content: center;
         flex-direction: column;
+    }
+
+    .BigMenu, 
+    .SmallMenuNoDisplay {
+        display: none;
+    }
+
+    .SmallMenuContainer {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100vw;
+        background-color: #fff;
+    }
+
+    .SmallMenu {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 2rem;
+    }
+
+    .SmallMenuBlock {
+        padding: 0;
+        display: block;
+        width: 100%;
+        height: 90%;
+        background-color: #142251ec;
+        position: fixed;
+        z-index: 998;
+        top: 88px;
+    }
+
+    .ListItemSmall {
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .ListItemSmallInner {
+        border-top: 1px solid #fff;
+        padding: 40px 0;
+    }
+
+    .ListItemSmallInner:hover {
+        background-color: #B76046;
     }
 
 }

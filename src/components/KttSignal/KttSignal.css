@@ -244,6 +244,9 @@
 
 /* Smaller Screens */
 @media (max-width: 900px)  {
+    .top-container {
+        top: 90px;
+    }
 
     .what-we-do {
         padding: 6rem 3rem;

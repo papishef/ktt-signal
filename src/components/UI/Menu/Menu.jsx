@@ -1,7 +1,7 @@
-import React  from 'react';
+import React, { useState }  from 'react';
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-// import { Divide as Hamburger } from 'hamburger-react'
+import { Sling as Hamburger } from 'hamburger-react'
 import "./Menu.css"
 import logoImg from "../../../images/Logo.png"
 
@@ -54,58 +54,53 @@ const MenuBarLarge = () => {
 /* FOR SMALLER SCREENS */
 const MenuBarSmall = () => {
 
-
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
 
-        <Box sx={{marginBottom: '5rem'}}>
+        <Box >
 
-            <Box className="SmallMenu">
-                <Box>
-                    <Link to={'/'}>
-                        <img src={logoImg} alt='LOGO' className="Logo" />
-                    </Link>
+            <div className='SmallMenuContainer'>
+                <Box className="SmallMenu">
+                    <div>
+                        <Link to={'/'}>
+                            <img src={logoImg} alt='LOGO' className="Logo" />
+                        </Link>
+                    </div>
+
+                    
+
+                    {/* HAMBURGER MENU BUTTON  */}
+
+                    <div className='HamburgerContainer'>
+                        <Hamburger 
+                            color="#142251" 
+                            rounded 
+                            size={40} 
+                            distance="md"
+                            toggled={menuOpen} 
+                            toggle={setMenuOpen}
+                        />
+                    </div>
+
                 </Box>
-
-                
-
-                {/* HAMBURGER MENU BUTTON  */}
-                {/* <Hamburger 
-                    color="#4B4B87" 
-                    rounded 
-                    size={40} 
-                    distance="md"
-                    onToggle={toggled => {
-                        if (toggled) {
-                            setMenuOpen(true)
-                        } else {
-                            setMenuOpen(false)
-                        }
-                    }}
-                /> */}
-            </Box>
+            </div>
 
             {/* MENU BLOCK */}
-            {/* <Box className={menuOpen ? "SmallMenuBlock" : "SmallMenuNoDisplay"}>
-                <Link to={'/about'} className="ListItemSmall">
-                    <Box>About MP Capital</Box>
+            <Box className={menuOpen ? "SmallMenuBlock" : "SmallMenuNoDisplay"}>
+                <Link to={'/'} className="ListItemSmall">
+                    <div className='ListItemSmallInner'>Parent Page</div>
                 </Link>
-                <Link to={'/categories'} className="ListItemSmall">
-                    <Box>Loan Categories</Box>
+                <Link to={'#what-we-do'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInner'>What we do</div>
                 </Link>
-                <Link to={'/loan-calc'} className="ListItemSmall">
-                    <Box>Loan Calculator</Box>
+                <Link to={'#who-we-are'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInner'>Who we are</div>
                 </Link>
-                <Link to={'/contact'} className="ListItemSmall">
-                    <Box>Contact Us</Box>
-                </Link>
-                <Link to={'/faqs'} className="ListItemSmall">
-                    <Box>FAQs</Box>
-                </Link>
-                <Link to={'/login'} className="Login">
-                    <Box>User Login</Box>
+                <Link to={'#contact'} className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInner'>Contact Us</div>
                 </Link>
                 
-            </Box> */}
+            </Box>
 
         </Box>
 

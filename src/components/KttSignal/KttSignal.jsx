@@ -35,7 +35,7 @@ const KttSignal = () => {
   
                 <Grid container>
                     <Grid item xs={12} sm={6} className="services">
-                        <div class="circle">
+                        <div className="circle">
                          
                             <Link className="welcome-links" to="/ktt-signal">
                                 <img src={highTechImg} alt='High-Tech' />
@@ -44,7 +44,7 @@ const KttSignal = () => {
                         <h3>HIGH TECH</h3>
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">   
-                        <div class="circle">
+                        <div className="circle">
                             <Link className="welcome-links" to="/tirobs">
                                 <img src={mediaImg} alt='Media Services' />
                             </Link>
@@ -52,7 +52,7 @@ const KttSignal = () => {
                         <h3>MEDIA SERVICES</h3>
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">
-                        <div class="circle">
+                        <div className="circle">
                             <Link className="welcome-links" to="/ktt-signal">
                                 <img src={digitalWellnessImg} alt='Digital Wellness' />
                             </Link>
@@ -60,7 +60,7 @@ const KttSignal = () => {
                         <h3>DIGITAL WELLNESS</h3>
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">   
-                        <div class="circle">
+                        <div className="circle">
                             <Link className="welcome-links" to="/tirobs">
                                 <img src={riskImg} alt='Risk/Security Management' />
                             </Link>
@@ -71,7 +71,7 @@ const KttSignal = () => {
                 
             </div>
 
-            <div id="about" className="about">
+            <div id="who-we-are" className="about">
                 <Grid container>
 
                     <Grid item xs={9} className="about-orange">
@@ -190,7 +190,7 @@ const KttSignal = () => {
                 </Grid>
             </div>
 
-            <div className="ktt-contact">
+            <div id="contact" className="ktt-contact">
 
                 <Grid container>
                     <Grid item xs={12} md={8} className="form-container">

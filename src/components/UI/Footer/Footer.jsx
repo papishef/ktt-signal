@@ -24,7 +24,7 @@ export const KttFooter = props => {
 
                        {iconImages.map(iconImage => {
                             return (
-                                <Link to="" className="social-link">
+                                <Link to="" className="social-link" key={iconImage}>
                                     <span className="social">
                                         <img src={iconImage} alt="KTT-SIGNAL" className="iconImg" /> 
                                         <span> @kttsignal</span>
@@ -36,7 +36,7 @@ export const KttFooter = props => {
                         <p></p>
                         {iconImages2.map(iconImage => {
                             return (
-                                <Link to="" className="social-link">
+                                <Link to="" className="social-link" key={iconImage}>
                                     <span className="social">
                                         <img src={iconImage} alt="social icon" className="iconImg" /> 
                                         <span> @kttsignal</span>
