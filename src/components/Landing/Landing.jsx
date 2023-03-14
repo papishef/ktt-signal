@@ -14,8 +14,8 @@ const Landing = () => {
 
             <div className="landing-wrapper">
 
-                <h2>Dive into our world of possibilities in Health and High-Tech Lifestyle. 
-                Select an option below to start your journey with us.</h2>
+                <h2>Dive into our world of possibilities. 
+                Select an option to start your journey with us.</h2>
 
                 <Grid container mt={2}>
                     <Grid item xs={12} md={6} p={5}>

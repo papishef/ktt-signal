@@ -153,7 +153,7 @@ const MenuBarSmallTirobs = () => {
         <Box >
 
             <div className='SmallMenuContainer'>
-                <Box className="SmallMenu">
+                <Box className="SmallMenuTirobs">
                     <div>
                         <Link href='/'>
                             <img src={tirobsLogo} alt='LOGO' className="Logo" />

@@ -143,10 +143,18 @@
         top: 0;
         width: 100vw;
         background-color: #fff;
+        
     }
 
     .SmallMenu {
         display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+    }
+
+    .SmallMenuTirobs {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         padding: 20px 2rem;
     }
@@ -156,7 +164,7 @@
     }
 
     .SmallMenuBlockTirobs {
-        background-color: #287D4F;
+        background-color: #287d50f9;
     }
 
     .SmallMenuBlock,
@@ -167,7 +175,7 @@
         height: 60%;
         position: fixed;
         z-index: 998;
-        top: 88px;
+        top: 7rem;
     }
 
     .ListItemSmall {

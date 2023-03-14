@@ -14,7 +14,7 @@ const divStyle = {
 const spanStyle = {
     padding: '20px',
     background: '#efefef81',
-    color: '#000000',
+    color: '#0000009d',
     textAlign: 'center'
 }
 
