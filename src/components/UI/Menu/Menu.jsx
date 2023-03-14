@@ -4,9 +4,9 @@ import { Link } from "@mui/material";
 import { Sling as Hamburger } from 'hamburger-react'
 import "./Menu.css"
 import logoImg from "../../../images/Logo.png"
+import tirobsLogo from "../../../images/tirobs logo.png"
 
 const screenWidth = window.innerWidth
-const pathname = window.location.pathname
 
 export const ParentMenu = () => {
     return (
@@ -17,7 +17,7 @@ export const ParentMenu = () => {
     )
 }
 
-/* FOR LARGER SCREENS */
+/* FOR LARGER SCREENS KTT SIGNAL */
 const MenuBarLarge = () => {
 
     return (
@@ -31,16 +31,16 @@ const MenuBarLarge = () => {
 
             <div>
                 <div className='MenuItems'>
-                    <Link href='/ktt-signal' className={pathname === "/ktt-signal" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='/ktt-signal' className="ListItem">
                         <div>Home</div>
                     </Link>
-                    <Link href='/ktt-signal/what-we-do' className={pathname === "/ktt-signal/what-we-do" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='#what-we-do' className="ListItem">
                         <div>What we do</div>
                     </Link>
-                    <Link href='/ktt-signal/about' className={pathname === "/ktt-signal/about" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='#who-we-are' className="ListItem">
                         <div>Who we are</div>
                     </Link>
-                    <Link href='/ktt-signal/contact' className={pathname === "/ktt-signal/contact" ? "ListItem +  active" : "ListItem"}>
+                    <Link href='#contact' className="ListItem">
                         <div>Contact us</div>
                     </Link>
                 </div>
@@ -51,7 +51,7 @@ const MenuBarLarge = () => {
     )
 }
 
-/* FOR SMALLER SCREENS */
+/* FOR SMALLER SCREENS KTT SIGNAL */
 const MenuBarSmall = () => {
 
     const [menuOpen, setMenuOpen] = useState(false)
@@ -107,6 +107,100 @@ const MenuBarSmall = () => {
     )
 }
 
+
+
+/* FOR LARGER SCREENS TIROBS */
+const MenuBarLargeTirobs = () => {
+
+    return (
+
+        <nav className="BigMenuTirobs">
+            <div>
+                <Link href='/'>
+                    <img src={tirobsLogo} alt='Tirobs' className="Logo" />
+                </Link>
+            </div>
+
+            <div>
+                <div className='MenuItems'>
+                    <Link href='/tirobs' className="ListItemTirobs">
+                        <div>Home</div>
+                    </Link>
+                    <Link href='#our-product' className="ListItemTirobs">
+                        <div>Our Product</div>
+                    </Link>
+                    <Link href='#who-we-are' className="ListItemTirobs">
+                        <div>Who we are</div>
+                    </Link>
+                    <Link href='#contact' className="ListItemTirobs">
+                        <div>Contact us</div>
+                    </Link>
+                </div>
+            </div>
+        
+        </nav>
+
+    )
+}
+
+
+/* FOR SMALLER SCREENS TIROBS */
+const MenuBarSmallTirobs = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+    return (
+
+        <Box >
+
+            <div className='SmallMenuContainer'>
+                <Box className="SmallMenu">
+                    <div>
+                        <Link href='/'>
+                            <img src={tirobsLogo} alt='LOGO' className="Logo" />
+                        </Link>
+                    </div>
+
+                    
+
+                    {/* HAMBURGER MENU BUTTON  */}
+
+                    <div className='HamburgerContainer'>
+                        <Hamburger 
+                            color="#014620" 
+                            rounded 
+                            size={40} 
+                            distance="md"
+                            toggled={menuOpen} 
+                            toggle={setMenuOpen}
+                        />
+                    </div>
+
+                </Box>
+            </div>
+
+            {/* MENU BLOCK */}
+            <Box className={menuOpen ? "SmallMenuBlockTirobs" : "SmallMenuNoDisplay"}>
+                <Link href='/' className="ListItemSmall">
+                    <div className='ListItemSmallInnerTirobs'>Parent Page</div>
+                </Link>
+                <Link href='#our-product' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInnerTirobs'>Our Product</div>
+                </Link>
+                <Link href='#who-we-are' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInnerTirobs'>Who we are</div>
+                </Link>
+                <Link href='#contact' className="ListItemSmall" onClick={() => setMenuOpen(false)}>
+                    <div className='ListItemSmallInnerTirobs'>Contact Us</div>
+                </Link>
+                
+            </Box>
+
+        </Box>
+
+    )
+}
+
+
 export const MenuBar = () => {
     if (screenWidth > 900) {
         return <MenuBarLarge />
@@ -114,4 +208,9 @@ export const MenuBar = () => {
     return <MenuBarSmall />
 }
 
-
+export const MenuBarTirobs = () => {
+    if (screenWidth > 900) {
+        return <MenuBarLargeTirobs />
+    }
+    return <MenuBarSmallTirobs />
+}

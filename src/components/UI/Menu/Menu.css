@@ -1,14 +1,15 @@
 .ParentMenu,
-.BigMenu {
+.BigMenu,
+.BigMenuTirobs {
     width: 100vw;
     color: #5658B7;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
     position: fixed;
     top: 0;
     margin: 0;
-    padding: .8rem 6rem;
+    padding: .8rem 4rem;
     align-items: center;
     background-color: white;
     display: flex;
@@ -17,6 +18,10 @@
     -webkit-box-shadow: outset 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+.BigMenuTirobs {
+    padding: .2rem 2rem;
 }
 
 .meet-us {
@@ -71,9 +76,18 @@
 
 .ListItem {
     color: #42449a !important;
+}
+
+.ListItemTirobs {
+    color: #000 !important;
+}
+
+.ListItemTirobs,
+.ListItem {
     text-decoration: none !important;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    border-bottom: 5px solid #b7604600;
     padding: 1.5rem 2.5rem;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -86,9 +100,14 @@
     border-bottom: 5px solid #B76046;
 }
 
+.ListItemTirobs:hover, .active {
+    border-bottom: 5px solid #287D4F;
+}
+
 
 
 .SmallMenuBlock,
+.SmallMenuBlockTirobs,
 .SmallMenu  {
     display: none;
 }
@@ -133,11 +152,19 @@
     }
 
     .SmallMenuBlock {
+        background-color: #142251ec;
+    }
+
+    .SmallMenuBlockTirobs {
+        background-color: #287D4F;
+    }
+
+    .SmallMenuBlock,
+    .SmallMenuBlockTirobs {
         padding: 0;
         display: block;
         width: 100%;
-        height: 90%;
-        background-color: #142251ec;
+        height: 60%;
         position: fixed;
         z-index: 998;
         top: 88px;
@@ -151,14 +178,24 @@
         width: 100%;
     }
 
-    .ListItemSmallInner {
+    .ListItemSmallInner,
+    .ListItemSmallInnerTirobs {
         border-top: 1px solid #fff;
         padding: 40px 0;
         text-decoration: none;
-    }
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+}
 
     .ListItemSmallInner:hover {
         background-color: #B76046;
+    }
+
+    .ListItemSmallInnerTirobs:hover {
+        background-color: #014620;
     }
 
 }

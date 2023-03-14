@@ -1,8 +1,9 @@
 import React from "react";
 import "./KttSignal.css"
 import { MenuBar } from "../UI/Menu/Menu"
-import { Link } from "react-router-dom"
-import { Grid } from "@mui/material"
+import { Grid, Link } from "@mui/material"
+import Slider from '../UI/Slider/Slider'
+import { kttSlideImgs } from "../UI/Slider/sliderContents"
 import highTechImg from "../../images/high-tech.png"
 import mediaImg from "../../images/media.png"
 import digitalWellnessImg from "../../images/digital-wellness.png"
@@ -24,6 +25,7 @@ const KttSignal = () => {
         <div>
             <MenuBar />
             <div className="top-container">
+                <Slider slideImgs={kttSlideImgs} />
             </div>
 
             <div id="what-we-do" className="what-we-do">
@@ -37,7 +39,7 @@ const KttSignal = () => {
                     <Grid item xs={12} sm={6} className="services">
                         <div className="circle">
                          
-                            <Link className="welcome-links" to="/ktt-signal">
+                            <Link className="welcome-links" href="/ktt-signal">
                                 <img src={highTechImg} alt='High-Tech' />
                             </Link>
                         </div>
@@ -45,7 +47,7 @@ const KttSignal = () => {
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">   
                         <div className="circle">
-                            <Link className="welcome-links" to="/tirobs">
+                            <Link className="welcome-links" href="/tirobs">
                                 <img src={mediaImg} alt='Media Services' />
                             </Link>
                         </div>
@@ -53,7 +55,7 @@ const KttSignal = () => {
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">
                         <div className="circle">
-                            <Link className="welcome-links" to="/ktt-signal">
+                            <Link className="welcome-links" href="/ktt-signal">
                                 <img src={digitalWellnessImg} alt='Digital Wellness' />
                             </Link>
                         </div>
@@ -61,7 +63,7 @@ const KttSignal = () => {
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">   
                         <div className="circle">
-                            <Link className="welcome-links" to="/tirobs">
+                            <Link className="welcome-links" href="/tirobs">
                                 <img src={riskImg} alt='Risk/Security Management' />
                             </Link>
                         </div>

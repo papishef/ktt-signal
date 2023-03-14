@@ -1,12 +1,10 @@
 .top-container {
+    padding: 0 10px;
     box-sizing: border-box;
-    background-image: url("../../images/ktt-top.PNG");
     height: 80vh;
     width: 100vw;
-    background-size: cover;
-    position: relative;
     width: 100vw;
-    top: 5rem;
+    margin-top: 5rem;
 }
 
 .what-we-do {
