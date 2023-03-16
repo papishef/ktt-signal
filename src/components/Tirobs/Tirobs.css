@@ -1,8 +1,86 @@
 .top-container-tirobs {
     box-sizing: border-box;
     height: 80vh;
-    width: 100vw;
-    width: 100vw;
+    width: 100vw !important;
+    margin: auto;
     margin-top: 5rem;
-    overflow: hidden;
+    padding-right: 15px !important;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.product {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 5rem 8rem 3rem;
+    text-align: center;
+    height: 450px;
+    width: 100vw;
+    z-index: 1;
+}
+
+.product-pictures {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.product p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+
+.product-picture-one,
+.product-picture-two {
+    background-size: 100%;
+    height: 22rem;
+    width: 45%;
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    z-index: 3;
+}
+
+.product-picture-one {
+    background-image: url('../../images/m024t0182_e_cleaning_spray_15july22.png');
+    margin-left: 10px !important;
+}
+
+.product-picture-two {
+    background-image: url('../../images/m024t0182_e_cleaning_spray.png');
+    margin-right: 10px !important;
+}
+
+
+/* Smaller Screens */
+@media (max-width: 1000px)  {
+    .product {
+        padding: 5rem 2rem;
+    }
+
+    .product-pictures {
+        justify-content: center;
+    }
+
+    .product-pictures {
+        width: 100%;
+    }
+
+    .product-picture-one {
+        width: 70%;
+        height: 300px;
+    }
+
+    .product-picture-two {
+        display: none;
+    }
 }
