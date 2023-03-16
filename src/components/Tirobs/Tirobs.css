@@ -63,6 +63,10 @@ h2 {
 
 /* Smaller Screens */
 @media (max-width: 1000px)  {
+    .top-container-tirobs {
+        height: 60vh;
+    }
+
     .product {
         padding: 5rem 2rem;
         height: 550px;
