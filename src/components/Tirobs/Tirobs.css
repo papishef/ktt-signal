@@ -35,7 +35,6 @@ h2 {
     margin-bottom: 3rem;
 }
 
-
 .product-picture-one,
 .product-picture-two {
     background-size: 100%;
@@ -60,6 +59,18 @@ h2 {
     margin-right: 10px !important;
 }
 
+.product-desc {
+    background-color: #a7bdb1;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 15rem 2rem 5rem 2rem;
+    text-align: center;
+}
+
+.product-desc p {
+    font-size: 1.3rem;
+}
+
 
 /* Smaller Screens */
 @media (max-width: 1000px)  {
@@ -68,7 +79,7 @@ h2 {
     }
 
     .product {
-        padding: 5rem 2rem;
+        padding: 10rem 2rem 5rem;
         height: 550px;
     }
 
@@ -82,7 +93,7 @@ h2 {
 
     .product-picture-one {
         width: 70%;
-        height: 300px;
+        height: 250px;
     }
 
     .product-picture-two {
