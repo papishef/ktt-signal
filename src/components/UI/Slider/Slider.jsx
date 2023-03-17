@@ -2,13 +2,13 @@ import React from 'react'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-
+const screenWidth = window.innerWidth
 const divStyle = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundSize: 'contain',
-    height: '80vh'
+    height: `${screenWidth > 900 ? '80vh' : '60vh'}`
 }
 
 const spanStyle = {
