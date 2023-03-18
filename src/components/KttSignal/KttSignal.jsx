@@ -1,9 +1,10 @@
 import React from "react";
 import "./KttSignal.css"
 import { MenuBar } from "../UI/Menu/Menu"
-import { Grid, Link } from "@mui/material"
+import { Grid } from "@mui/material"
 import Slider from '../UI/Slider/Slider'
 import { kttSlideImgs } from "../UI/Slider/sliderContents"
+import Blob from "../UI/Blob/Blob";
 import highTechImg from "../../images/high-tech.png"
 import mediaImg from "../../images/media.png"
 import digitalWellnessImg from "../../images/digital-wellness.png"
@@ -37,36 +38,19 @@ const KttSignal = () => {
   
                 <Grid container>
                     <Grid item xs={12} sm={6} className="services">
-                        <div className="circle">
-                         
-                            <Link className="welcome-links" href="/ktt-signal">
-                                <img src={highTechImg} alt='High-Tech' />
-                            </Link>
-                        </div>
+                        <Blob link='/ktt-signal' bgImage={highTechImg} altText='High-Tech' title='To Know More' />
                         <h3>HIGH TECH</h3>
                     </Grid>
-                    <Grid item xs={12} sm={6} className="services">   
-                        <div className="circle">
-                            <Link className="welcome-links" href="/tirobs">
-                                <img src={mediaImg} alt='Media Services' />
-                            </Link>
-                        </div>
+                    <Grid item xs={12} sm={6} className="services">  
+                        <Blob link='/ktt-signal' bgImage={mediaImg} altText='Media Services' title='Know More' /> 
                         <h3>MEDIA SERVICES</h3>
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">
-                        <div className="circle">
-                            <Link className="welcome-links" href="/ktt-signal">
-                                <img src={digitalWellnessImg} alt='Digital Wellness' />
-                            </Link>
-                        </div>
+                        <Blob link='/ktt-signal' bgImage={digitalWellnessImg} altText='Digital Wellness' title='To Know More' />
                         <h3>DIGITAL WELLNESS</h3>
                     </Grid>
                     <Grid item xs={12} sm={6} className="services">   
-                        <div className="circle">
-                            <Link className="welcome-links" href="/tirobs">
-                                <img src={riskImg} alt='Risk/Security Management' />
-                            </Link>
-                        </div>
+                        <Blob link='/ktt-signal' bgImage={riskImg} altText='Risk/Security Management' title='To Know More' />
                         <h3>RISK/SECURITY <br />MANAGEMENT</h3>
                     </Grid>
                 </Grid>

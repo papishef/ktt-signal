@@ -2,9 +2,9 @@ import React from "react"
 import "./Landing.css"
 import { ParentMenu } from "../UI/Menu/Menu"
 import { Grid } from "@mui/material"
-import { Link } from "react-router-dom";
 import kttImage from "../../images/ktt-welcome.png"
 import tirobsImage from "../../images/spray can.png"
+import Blob from "../UI/Blob/Blob";
 
 
 const Landing = () => {
@@ -19,18 +19,10 @@ const Landing = () => {
 
                 <Grid container mt={2}>
                     <Grid item xs={12} md={6} p={5}>
-                        <div className="circle">
-                            <Link className="welcome-links" to="/ktt-signal">
-                                <img src={kttImage} alt='KTT Welcome' />
-                            </Link>
-                        </div>
+                        <Blob link='/ktt-signal' bgImage={kttImage} altText='KTT Welcome' title='KTT Signal Page' />
                     </Grid>
-                    <Grid item xs={12} md={6} p={5}>   
-                        <div className="circle">
-                            <Link className="welcome-links" to="/tirobs">
-                                <img src={tirobsImage} alt='Tirobs Welcome' />
-                            </Link>
-                        </div>
+                    <Grid item xs={12} md={6} p={5}> 
+                        <Blob link='/tirobs' bgImage={tirobsImage} altText='Tirobs Welcome' title='Tirobs Page' /> 
                     </Grid>
                 </Grid>
 

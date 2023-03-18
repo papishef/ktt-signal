@@ -71,6 +71,33 @@ h2 {
     font-size: 1.3rem;
 }
 
+.circle-container-tirobs {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px !important;
+}
+
+
+.circle-container-large-tirobs {
+    width: 100%;
+    height: 400px;
+}
+
+.circle-container-tirobs h5,
+.circle-container-large-tirobs h5 {
+    margin-top: 60px !important;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.circle-container-tirobs p,
+.circle-container-large-tirobs p,
+.circle-container-large-tirobs ul {
+    font-size: .9rem !important;
+    color: black;
+    margin: 0 4rem;
+}
+
 
 /* Smaller Screens */
 @media (max-width: 1000px)  {
@@ -98,5 +125,9 @@ h2 {
 
     .product-picture-two {
         display: none;
+    }
+
+    .circle-container-large-tirobs .circle {
+        width: 100%;
     }
 }
