@@ -139,6 +139,29 @@ const Tirobs = () => {
                 </Grid>
             </div>
 
+            <div className="tirobs-mission-vision">
+
+                <div className="tirobs-vision">
+                    <div className="inner">
+                        <h2>OUR VISION</h2>
+                        <p>· To be one of the best healthcare provider of choice</p>
+                        <p>· To set the highest standards in personal healthcare and surface disinfection</p>
+                    </div>
+                </div>
+
+                <div className="tirobs-mission">
+                    <div className="inner">
+                        <h2>OUR MISSION</h2>
+                        <p>· To be an active participant in healthcare service provision</p>
+                        <p>· To try to reduce to the barest minimum occurrence of common viral and bacterial diseases by effective deployment and use of Tirob’s NDS</p>
+                        <p>· To liaise with NGOs and accredited bodies involved in healthcare service delivery to ensure a greater number of Nigerians have access to basic sanitary services</p>
+                        <p>· To eliminate bureaucracy and maximize outcomes in meeting health challenges</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     )
 }

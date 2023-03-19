@@ -144,6 +144,60 @@ h2 {
     display: none;
 }
 
+.tirobs-mission-vision {
+    background: #A7BDB1;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.tirobs-vision {
+    box-sizing: border-box;
+    background-image: url('../../images/Rectangle23tirob.png');
+    background-size: contain;
+    margin-right: 1rem;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    width: 45%;
+}
+
+.tirobs-mission {
+    box-sizing: border-box;
+    background-image: url('../../images/Rectangle24tirob.png');
+    background-size: contain;
+    margin-left: 1rem;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    width: 45%;
+}
+
+.inner {
+    background-color: #00210F99;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+.inner h2 {
+    color: white;
+}
+
+.inner p {
+    font-size: 1.1rem;
+}
+
 /* Smaller Screens */
 @media (max-width: 1000px)  {
     .top-container-tirobs {
@@ -188,5 +242,26 @@ h2 {
 
     .tirobs-abt-images img:last-child {
         display: block;
+    }
+
+    .tirobs-mission-vision {
+        flex-direction: column;
+        height: 600px;
+        padding: 0;
+    }
+
+    .tirobs-vision,
+    .tirobs-mission {
+        width: 90%;
+    }
+
+    .tirobs-vision,
+    .tirobs-mission {
+        margin-bottom: 1rem;
+    }
+
+    .tirobs-mission,
+    .tirobs-vision {
+        margin-top: 1rem;
     }
 }
