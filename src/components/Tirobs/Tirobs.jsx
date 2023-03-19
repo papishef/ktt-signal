@@ -5,6 +5,9 @@ import Slider from '../UI/Slider/Slider'
 import { tirobsSlideImgs } from "../UI/Slider/sliderContents"
 import { Grid } from "@mui/material"
 import Blob from "../UI/Blob/Blob"
+import appleImg from "../../images/Rectangle44tirob.png"
+import labCoatManImg from "../../images/Rectangle58tirob.png"
+import teamStickyNotesImg from "../../images/Rectangle57tirob.png"
 
 const blobNotes = [
     {
@@ -94,6 +97,44 @@ const Tirobs = () => {
                                 <li>Unlike Sodium hypochlorite that is used to irrigate root canals in dentistry, and can cause many adverse reactions, such as damage to the skin, oral mucosa, and eyes, damage to clothing, surgical emphysema, allergic reactions, and injection beyond the foramen, scientific studies show that our product can safely do these without any adverse effect</li>
                             </ul>
                         </Blob>
+                    </Grid>
+                </Grid>
+            </div>
+
+            <div id="who-we-are" className="about">
+                <Grid container>
+                    <Grid item xs={9} className="about-green">
+                        <h2>WHO WE ARE</h2>
+
+                        <p>Tirob and Tisi Limited is a leading company engaged in the formulation of the best brand of Natural 
+                        Disinfectants for improved healthcare delivery service across Nigeria. We are driven by the desire to live the dream of 
+                        ‘A Healthy Nation is a Wealthy Nation’ through formulation and distribution of Tirob’s Natural Disinfectant Solution that 
+                        is effective in skin disinfection, wound care, food safety, deodorization and skin products additives and surfaces.</p>
+                        
+                        <h4>OUR COMMITMENT TO KEEPING HYGENE AT THE HEART OF OUR HOMES AND THE ENVIRONMENT</h4>
+                        <p>At Tirob and Tisi we strive to maintain the highest quality standard for our products, corporate responsibility with strict 
+                        adherence to proper business practices. By adhering to diligent scientific practices, we are able to stay ahead of our competitors 
+                        in similar industry through consistent product quality. This success is closely tied to the efforts of our qualified personnel who uphold 
+                        our values as proud members of the production team.</p>
+
+                        <p>Our core values are the cornerstones of our philosophy of service delivery and improvement at every point. We achieve this through 
+                        respect for people and their diversity, encouraging new ideas, and trying to foster an environment of equal opportunity and growth. 
+                        Our employees are encouraged to foster new ideas and implement them by applying their scientific knowledge, intelligence, skills and 
+                        creativity in constantly improving on what we have.</p>
+
+                        <h4>CORPORATE ETHICS</h4>
+                        <p>At Tirob and Tisi we adhere to a code of ethics founded on honesty and commitment that is supported by the professional integrity of each employee.</p>
+
+                        <h4>MANAGEMENT</h4>
+                        <p>At the heart of our management team is an experienced Analytical Chemist; Mr. Lawrence Ganchok who is a seasoned managers with extensive experience 
+                        in the product quality control with few others who drive our production, packaging and marketing processes.</p>
+                        
+                    </Grid>
+
+                    <Grid item xs={3} className="tirobs-abt-images">
+                        <img src={appleImg} alt={appleImg} />
+                        <img src={teamStickyNotesImg} alt={teamStickyNotesImg} />
+                        <img src={labCoatManImg} alt={labCoatManImg} />
                     </Grid>
                 </Grid>
             </div>

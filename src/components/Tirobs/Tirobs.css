@@ -62,6 +62,7 @@ h2 {
 .product-desc {
     background-color: #a7bdb1;
     box-sizing: border-box;
+    margin-bottom: 7rem;
     width: 100vw;
     padding: 15rem 2rem 5rem 2rem;
     text-align: center;
@@ -98,6 +99,50 @@ h2 {
     margin: 0 2rem;
 }
 
+.about-green {
+    background-color: #287D4F;
+    padding: 3rem 10rem 0rem 5rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.about-green h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.about-green p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-green h4 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3rem;
+    margin: 3rem 0 0;
+}
+
+.tirobs-abt-images {
+    padding: 4rem 0 0 0;
+    box-sizing: border-box;
+}
+
+.tirobs-abt-images img {
+    width: 120%;
+    height: 23rem;
+    margin-bottom: 4rem;
+    z-index: 99;
+    position: relative;
+    left: -5rem;
+}
+
+.tirobs-abt-images img:last-child {
+    margin-bottom: 0;
+    display: none;
+}
 
 /* Smaller Screens */
 @media (max-width: 1000px)  {
@@ -130,5 +175,18 @@ h2 {
     .circle-container-large-tirobs .circle {
         width: 100%;
         height: 27rem;
+    }
+
+    .about-green {
+        padding: 3rem 4rem 3rem 2rem;
+    }
+
+    .tirobs-abt-images img {
+        left: -3.5rem;
+        width: 160%;
+    }
+
+    .tirobs-abt-images img:last-child {
+        display: block;
     }
 }
