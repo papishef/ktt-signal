@@ -176,7 +176,7 @@ const KttSignal = () => {
                 </Grid>
             </div>
 
-            <div id="contact" className="ktt-contact">
+            <div id="contact" className="">
 
                 <Grid container>
                     <Grid item xs={12} md={8} className="form-container">

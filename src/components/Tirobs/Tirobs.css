@@ -153,13 +153,13 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 0 10rem;
-    margin: 5rem 0;
+    margin: 0 0 5rem;
 }
 
 .tirobs-vision {
     box-sizing: border-box;
     background-image: url('../../images/Rectangle23tirob.png');
-    background-size: contain;
+    background-size: cover;
     margin-right: 1rem;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
@@ -170,7 +170,7 @@ h2 {
 .tirobs-mission {
     box-sizing: border-box;
     background-image: url('../../images/Rectangle24tirob.png');
-    background-size: contain;
+    background-size: cover;
     margin-left: 1rem;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
@@ -196,6 +196,11 @@ h2 {
 
 .inner p {
     font-size: 1.1rem;
+}
+
+.form-container.tirobs-background {
+    background-color: #A7BDB2;
+    margin-top: 5rem;
 }
 
 /* Smaller Screens */

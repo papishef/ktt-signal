@@ -8,6 +8,9 @@ import Blob from "../UI/Blob/Blob"
 import appleImg from "../../images/Rectangle44tirob.png"
 import labCoatManImg from "../../images/Rectangle58tirob.png"
 import teamStickyNotesImg from "../../images/Rectangle57tirob.png"
+import yogaPrayImg from "../../images/Rectangle29tirob.png"
+import { Input } from "../UI/Input/Input"
+import { GreenButton } from "../UI/Buttons/Buttons"
 
 const blobNotes = [
     {
@@ -159,6 +162,55 @@ const Tirobs = () => {
                         
                     </div>
                 </div>
+
+            </div>
+
+            <div id="contact">
+
+                <Grid container>
+                    <Grid item xs={12} md={8} className="form-container tirobs-background">
+                        <h2>WE'LL LOVE TO HEAR FROM YOU</h2>
+                        <form className="form-container-inner">
+                            <Grid container>
+                                <Input inputType="text" inputGrid={6} label="First Name" />
+                                <Input inputType="text" inputGrid={6} label="Last Name" />
+                                <Input inputType="number" inputGrid={6} label="Mobile" />
+                                <Input inputType="email" inputGrid={6} label="Email" />
+                                <Input inputType="text" inputGrid={12} label="Address" />
+                                <Input inputType="text" inputGrid={12} label="Write us..." multiline />
+                            </Grid>
+                            <div style={{textAlign: "right", paddingRight: "6px"}}>
+                                <GreenButton title="Send" />
+                            </div>
+                        </form>
+                        <div className="address-container">
+                            <Grid container>
+                                <Grid item xs={6}>
+                                    <div className="address-box">
+                                        <h4>HEADQUARTERS</h4>
+                                        <p>KTTSIGNAL LTD. a: House 40, C Close O.A.U Quarters Maitama, 
+                                        F.C.T - Abuja, Nigeria.</p>
+                                        <p>Call: (234) 704-1670-000 </p>
+                                        <p>Email: info@kttsignal.net</p>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="address-box">
+                                        <h4>INTERNATIONAL OFFICES</h4>
+                                        <p>KTTSIGNAL S.A. 6131, Mount Kulal Str Ext 4. Lenasia south. 
+                                            Johannesburg R.S.A.</p>
+                                        <p>Call: (27) 732-747-162</p>
+                                        <p>Email: rsa@kttsignal.ne</p>
+                                    </div>
+                                </Grid>
+                            </Grid>
+                        </div>
+
+                    </Grid>
+                    <Grid item xs={12} md={4} className="contact-image">
+                        <img src={yogaPrayImg} alt={yogaPrayImg} />
+                    </Grid>
+                </Grid>
 
             </div>
 

@@ -32,3 +32,21 @@
 .BlueGradientCurvedBtn:hover {
     background: linear-gradient(45deg, #074DFF, #F24E1E);
 }
+
+.GreenBtn {
+    background-color: #287D4F;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: .9rem;
+    padding: .9rem 3.3rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.GreenBtn:hover {
+    background-color: #287d50d2;
+}
